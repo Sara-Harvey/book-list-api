@@ -6,8 +6,8 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-#comic = Category.create(name: "comic")
-#fiction = Category.create(name: "fiction")
-#nonfiction = Category.create(name: "fiction")
+comic = Category.create(name: "comic")
+fiction = Category.create(name: "fiction")
+nonfiction = Category.create(name: "nonfiction")
 
-#first_book = Book.create(date: "2009-09-01", content: "I can do this.", category_id: event.id)
+first_book = Book.create(date: "2009-09-01", name: "Lucky", note: "Gabrielle Bell's self-published 2006 debut", category_id: comic.id)
