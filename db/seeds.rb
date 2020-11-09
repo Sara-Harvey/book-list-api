@@ -10,4 +10,4 @@ comic = Category.create(name: "comic")
 fiction = Category.create(name: "fiction")
 nonfiction = Category.create(name: "nonfiction")
 
-first_book = Book.create(date: "2009-09-01", name: "Lucky", note: "Gabrielle Bell's self-published 2006 debut", category_id: comic.id)
+first_book = Book.create(date: "2009-09-01", name: "Lucky", author: "Gabrielle Bell", note: "Cool self-published 2006 debut", category_id: comic.id)
