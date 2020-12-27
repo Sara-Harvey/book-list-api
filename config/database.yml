@@ -27,3 +27,4 @@ production:
   <<: *default
   # database: db/production.sqlite3 #old
   database: booklist
+
