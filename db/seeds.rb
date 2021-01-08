@@ -6,10 +6,12 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-comic = Category.create(name: "comic")
-fiction = Category.create(name: "fiction")
-nonfiction = Category.create(name: "nonfiction")
+read = Category.create(name: "read")
+listen = Category.create(name: "listen")
 
-first_book = Book.create(date: "2020-09-01", name: "Lucky", author: "Gabrielle Bell", note: "Cool self-published 2006 debut", category_id: comic.id)
-second_book = Book.create(date: "2020-10-01", name: "Total Cat Mojo", author: "Jackson Galaxy", note: "We're going to raise this foster kitten right", category_id: nonfiction.id)
-first_book = Book.create(date: "2020-11-01", name: "Boys of Alabama", author: "Genevieve Hudson", note: "Memories of the South", category_id: fiction.id)
+first_story = Story.create(name: "Dry January is Shocked by Your Naïveté", author: "Ann Cinzar", description: "A funny take on good intentions", link: "https://www.mcsweeneys.net/articles/dry-january-is-shocked-by-your-naivete", category_id: read.id)
+second_story = Story.create(name: "Self-Care Tips for Toddlers", author: "Shannon J. Curtain", description: "What doesn't kill kids lets them grow a little older", link: "https://www.mcsweeneys.net/articles/self-care-tips-for-toddlers", category_id: read.id)
+third_story = Story.create(name: "Things I Didn't Have on My 2020 Bingo Card Bingo", author: "Kimberly Harrington", description: "2020 surprises", link: "https://www.mcsweeneys.net/articles/things-i-didnt-have-on-my-2020-bingo-card-bingo", category_id: read.id)
+fourth_story = Story.create(name: "Mr. Tough Guy", author: "CJ Hunt", description: "CJ Hunt tests his bravery during an apartment confrontation.", link: "https://themoth.org/stories/mr-tough-guy", category_id: listen.id)
+fifth_story = Story.create(name: "The Bad Joke", author: "Adriane McGillis", description: "Adrianne McGillis’ father's favorite joke lands him in the hospital.", link: "https://themoth.org/stories/the-bad-joke", category_id: listen.id)
+sixth_story = Story.create(name: "The Nerve", author: "Andrew Orvedahl", description: "A comic gets his big break.", link: "https://themoth.org/stories/the-nerve", category_id: listen.id) 
