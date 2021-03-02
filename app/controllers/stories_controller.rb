@@ -1,4 +1,5 @@
 class StoriesController < ApplicationController
+  skip_before_action :verify_authenticity_token
   
   def index
     stories = Story.all 
@@ -47,7 +48,6 @@ class StoriesController < ApplicationController
 
   private
   def story_params
-      params.require(:story).permit(:name, :description, :link, :category_id)
-    
+      params.require(:story).permit(:name, :description, :link, :category_id)    
   end
 end
